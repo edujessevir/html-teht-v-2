@@ -7,3 +7,6 @@
 [0821/111536.430:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)
 [0821/111604.546:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)
 [0821/111959.243:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)
+[0821/115922.136:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)
+[0821/115937.906:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)
+[0821/120721.960:ERROR:registration_protocol_win.cc(108)] CreateFile: Määritettyä tiedostoa ei löydy. (0x2)

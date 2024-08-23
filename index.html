@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,7 @@
     <h2>Otsikko 2</h2>
     <h3>Otsikko 3</h3>
 
-    <p>Tämä on paragraphi</p>
+    <p id="kappale1">Tämä on paragraphi</p>
 
     <img src="htmlkuva.JPG" alt="Kuva vscodesta">
 
@@ -37,5 +38,70 @@
 
     <a href="https://www.salpaus.fi/" target="_blank" rel="noreferrer" rel="noopener">Linkki salpaukseen</a>
     <button><a href="portfolio.html">Sivu 2 - </a></button>
+<hr>
+<!--Js testiä-->
+<button onclick="document.getElementById('kappale1').style.color = 'red';">Vaihda kappaleen väri</button>
+
+<hr>
+
+<button onclick="document.getElementById('kappale1').innerHTML = 'Tämä on vieläkin paragraphi'">Vaihda kappaleen teksti</button>
+
+<hr>
+
+<h1>Miten var, let ja const eroavat toisistaan?</h1>
+<ul>
+    <li>Var - Var oli käytössä vuoteen 2015 asti, sitä ei enään käytetä paitsi vanhemmissa selaimissa. Tilalle tuli alemmat.</li>
+    <li>Const - Const variablen valueta ei pysty vaihtamaan, käytä aina sitä jos et halua vaihtaa sisältöä.</li>
+    <li>Let - Let variablea kannattaa käyttää aina kun mahdollista.</li>
+</ul>
+
+
+
+<hr>
+
+<script>
+let count = 0;
+while (count < 5){
+ document.write("huhuu?!<br>");
+ count++;
+}
+</script>
+
+<hr>
+
+<p id="eläin"></p>
+
+<script>
+
+    const animals = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+    let animal = animals.length;
+    let text = "<ul>"
+    
+    for (let i = 0; i < animal; i++ ) {
+        text += "<li>" + animals[i] + "!</li>";
+    }
+    text += "</ul>";
+    
+    document.getElementById("eläin").innerHTML = text;
+    
+    </script>
+
+<hr>
+
+    <p id="cred"></p>
+
+    <script>
+
+
+    let x = myCred("Hei, Jesse", " Virtanen");
+        document.getElementById("cred").innerHTML = x;
+
+        function myCred(a, b) {
+        return a + b;
+    }
+        
+        
+    </script>
+
 </body>
 </html>
