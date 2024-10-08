@@ -11,3 +11,26 @@ div:hover {
     padding: 10px;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px){
+  .body {background-color: red;} 
+  h1 {opacity: 0;}
+}
+
+@media only screen and (min-width: 600px){
+    .body {background-color: blue;}
+    h1  {opacity: 1;}
+    h2 {opacity: 0;}
+}
+
+@media only screen and (min-width: 768px){
+    .body {background-color: orange;}
+}
+
+@media only screen and (min-width: 992px){
+    .body {background-color: cyan;}
+}
+
+@media only screen and (min-width: 1200px){
+    .body {background-color: brown;}
+}
